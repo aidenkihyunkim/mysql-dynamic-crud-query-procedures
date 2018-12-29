@@ -8,7 +8,7 @@ The following samples show the usage of **i_conditions** parameters of each proc
 ```
 :arrow_right:
 ```sql
-WHERE col1_name = 'col1_value' AND col9_name = 123 AND col3_value = 'col3_value'
+WHERE col1_name = 'col1_value' AND col2_name = 123 AND col3_value = 'col3_value'
 ```
 
 ### Sorting (Allow at SELECT statement only)
@@ -81,7 +81,7 @@ WHERE
     OR (col5_name NOT IN ('4','5','6'))
     OR (col6_name IS null)
     OR (
-      (`col7_name` IS NOT null)
+      (col7_name IS NOT null)
       AND (MATCH (col8_name) AGAINST ('"abc"' IN BOOLEAN MODE))
     )
   )

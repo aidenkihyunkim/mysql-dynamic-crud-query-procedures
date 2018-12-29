@@ -10,17 +10,17 @@ If the schema or business logic changed, it can be applied without modification 
 
 # Stored Procedures & Functions
 
-- [**sp_json_insert_table**](#INSERT-:-sp_json_insert_table) : Execute insert query
-- [**sp_json_select_table**](#SELECT-:-sp_json_select_table) : Execute select query
-- [**sp_json_update_table**](#UPDATE-:-sp_json_update_table) : Execute update query
-- [**sp_json_delete_table**](#DELETE-:-sp_json_delete_table) : Execute delete query
+- [**sp_json_insert_table**](#INSERT-sp_json_insert_table) : Execute insert query
+- [**sp_json_select_table**](#SELECT-sp_json_select_table) : Execute select query
+- [**sp_json_update_table**](#UPDATE-sp_json_update_table) : Execute update query
+- [**sp_json_delete_table**](#DELETE-sp_json_delete_table) : Execute delete query
 - **sp_json_get_query_conditions** : Parsing query conditions from JSON
 - **fn_get_json_query_conditions** : Parsing query conditions from JSON (subroutine of sp_json_get_query_conditions)
 - **fn_get_json_query_page_conditions** : Parsing paging query conditions from JSON
 - **fn_get_json_query_sort_conditions** : Parsing sorting query conditions from JSON
 - **fn_get_json_query_table_column_map** :Getting table columns information from INFORMATION_SCHEMA
 
-## INSERT : sp_json_insert_table
+## INSERT sp_json_insert_table
 
 Order | Parameter | In/Out | Type | Description
 ------|-----------|--------|------|------------
@@ -36,7 +36,7 @@ CALL sp_json_insert_table( 'table',
     'database', @return, @row_count, @last_insert_id );
 ```
 
-## SELECT : sp_json_select_table
+## SELECT sp_json_select_table
 
 Order | Parameter | In/Out | Type | Description
 ------|-----------|--------|------|------------
@@ -51,7 +51,7 @@ CALL sp_json_select_table( 'table',
     'database', @return, @row_count );
 ```
 
-## UPDATE : sp_json_update_table
+## UPDATE sp_json_update_table
 
 Order | Parameter | In/Out | Type | Description
 ------|-----------|--------|------|------------
@@ -68,7 +68,7 @@ CALL sp_json_update_table( 'table',
     'database', @return, @row_count );
 ```
 
-## DELETE : sp_json_delete_table
+## DELETE sp_json_delete_table
 
 Order | Parameter | In/Out | Type | Description
 ------|-----------|--------|------|------------
